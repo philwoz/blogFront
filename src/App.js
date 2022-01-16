@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route, Link } from "react-router-dom";
 
 import { NavBar } from './components/NavBar';
-import { AddPost } from "./components/AddPost";
+import { AllPosts } from "./components/AllPost";
 
 
 
@@ -13,7 +13,7 @@ function App() {
     
     <div>
     <NavBar/>
-    <AddPost />
+    <AllPosts />
     </div>
     );
   
