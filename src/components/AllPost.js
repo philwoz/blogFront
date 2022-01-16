@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { PostCard } from "./PostCard";
+import { fetchPosts } from "../utils/index";
 
 export const AllPosts = (props) => {
     const [posts, setPosts] = useState([]);
@@ -8,13 +9,6 @@ export const AllPosts = (props) => {
         fetchPosts(setPosts);
     }, [])
 
-    const fetchPosts = async (setPosts) => {
-        const response = await fetch("http://localhost:5000/posts", {
-          method: "GET",
-        });
-        const data = await response.json();
-        setPosts(data);
-      };
 
     return (
         <div>

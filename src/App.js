@@ -1,9 +1,11 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Switch, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import { NavBar } from './components/NavBar';
-import { AllPosts } from "./components/AllPost";
+import  {AllPosts} from "./components/AllPost";
+import {MyPosts}  from "./components/MyPosts";
+import {AddPost}  from "./components/AddPost";
 
 
 
@@ -13,7 +15,14 @@ function App() {
     
     <div>
     <NavBar/>
-    <AllPosts />
+    <div>
+      <Routes>
+        
+        <Route exact path="/allposts" element={<AllPosts />} />
+        <Route path="/mypost" element={<MyPosts />} />
+        <Route path="/addpost" element={<AddPost />} />
+      </Routes>
+    </div>
     </div>
     );
   

@@ -9,17 +9,17 @@ export const NavBar = (props) => {
             </a>
             <div className="navbar-nav mr-auto">
                 <li className="nav-item">
-                    <Link to={"/posts"} className="nav-link">
+                    <Link to={"/allposts"} className="nav-link">
                         All Posts
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to={"/posts"} className="nav-link">
+                    <Link to={"/mypost"} className="nav-link">
                         My Posts
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to={"/posts"} className="nav-link">
+                    <Link to={"/addpost"} className="nav-link">
                         Add Posts
                     </Link>
                 </li>
