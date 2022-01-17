@@ -84,3 +84,15 @@
 //     height: 100%;
 //   }
 // `;
+
+// {user ? (
+//     <button "onClick={logout}" className="nav-link" style={{ cursor: 'pointer' }}>
+//       Logout {props.user.name}
+//     </button>
+//   ) : (
+//     <Link to={"/login"} className="nav-link">
+//       Login
+//     </Link>
+//   )} 
+
+

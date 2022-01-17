@@ -1,41 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+// import { Link } from "react-router-dom";
 
 export const NavBar = (props) => {
     return (
-        <nav className="navbar navbar-expand navbar-dark bg-dark">
-            <a href="/restaurants" className="navbar-brand">
-                BlogStars
-            </a>
-            <div className="navbar-nav mr-auto">
-                <li className="nav-item">
-                    <Link to={"/allposts"} className="nav-link">
-                        All Posts
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to={"/mypost"} className="nav-link">
-                        My Posts
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to={"/addpost"} className="nav-link">
-                        Add Posts
-                    </Link>
-                </li>
-                {/* <li className="nav-item" >
-            {user ? (
-              <button onClick={logout} className="nav-link" style={{ cursor: 'pointer' }}>
-                Logout {user.name}
-              </button>
-            ) : (
-              <Link to={"/login"} className="nav-link">
-                Login
-              </Link>
-            )}
+        <Navbar bg="light" expand="lg">
+            <Container>
+                <Navbar.Brand href="#home">BlogStars</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="/allposts">All Posts</Nav.Link>
+                        <Nav.Link href="/mypost">My Posts</Nav.Link>
+                        <Nav.Link href="/addpost">Add Post</Nav.Link>
+                        <Nav.Link href="/login">Login</Nav.Link>
+                        <Nav.Link href="/Register">Register</Nav.Link>
+                        
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
 
-          </li> */}
-            </div>
-        </nav>
     )
 };
