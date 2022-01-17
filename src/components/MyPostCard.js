@@ -7,9 +7,8 @@ export const PostCard = (props) => {
                 <h5 class="card-title">{props.title}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                 <p class="card-text">{props.content}</p>
-                <button type="submit" class="btn btn-primary">Like</button> 
-                <p class="card-text">Likes: 0</p>
-                {/* <button type="button" class="btn btn-success"></button> */}
+                <button type="submit" class="btn btn-primary">Edit Post</button> 
+                <button type="button" class="btn btn-success">Delete</button>
             </div>
         </div>
     )

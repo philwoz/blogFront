@@ -13,18 +13,19 @@ import { LoginPage } from "./components/LoginPage";
 
 
 function App() {
-  const [user, setUser] = React.useState(null);
+  // const [userDet, setUserDet] = React.useState(null);
+  const [logOnUser, setLogOnUser] = React.useState(null);
 
   return (
 
     <div>
-      <NavBar user={user} />
+      <NavBar user={logOnUser} />
       <div>
         <Routes>
           <Route exact path="/allposts" element={<AllPosts />} />
           <Route path="/mypost" element={<MyPosts />} />
           <Route path="/addpost" element={<AddPost />} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage func={setLogOnUser}/>} />
           <Route path="/register" element={<RegPage />} />
         </Routes>
       </div>

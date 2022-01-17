@@ -3,7 +3,7 @@ import React from "react";
 export const RegPage = (props) => {
     return (
         <form>
-            <div class="mb-3">
+            <div className="mb-3">
                 <label for="exampleInputUser1" class="form-label">User Name</label>
                 <input type="UserName" class="form-control" id="exampleInputUser1" aria-describedby="userlHelp"></input>
             </div>
